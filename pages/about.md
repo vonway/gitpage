@@ -19,9 +19,9 @@ permalink: /about/
 
 ## 联系
 
-* GitHub：[@vonway](https://github.com/vonway)
+* GitHub：[vonway](https://github.com/vonway)
 * 博客：[{{ site.title }}]({{ site.url }})
-* 知乎: [@冯可烦](https://www.zhihu.com/people/xiao-ma-26-82)
+* 知乎: [@冯可烦](https://www.zhihu.com/people/vonway)
 
 ## Skill Keywords
 
