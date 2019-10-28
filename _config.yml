@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: http://blog.vonway.cn
+url: https://blog.vonway.cn
 date_format: "ordinal"
 title: vonway
 subtitle: "不吃羊的小灰灰"
@@ -104,7 +104,7 @@ google:
 # ---------------- #
 #      Datas       #
 # ---------------- #
-skill_software_keywords: [C, C++, Linux]
+skill_software_keywords: [C, C++, Linux, Database]
 skill_mobile_app_keywords: [Android, iOS]
 skill_windows_keywords: [C#]
 github: [metadata]
