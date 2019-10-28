@@ -10,7 +10,7 @@
 
 ## 效果预览
 
-### [在线预览 &rarr;](http://vonway.cn)
+### [在线预览 &rarr;](http://blog.vonway.cn)
 
 ![screenshot home](images/home_preview.png)
 
