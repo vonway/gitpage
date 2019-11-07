@@ -38,11 +38,11 @@ cd 解压后的文件夹
 https://github.com/petersenna/codeviz
 
 ```
-    
+
 - codeviz-1.0.12匹配的gcc是3.4.6和4.6.2，选择4.6.2
 
 ```
-# 使用中科大的GNU镜像服务器 
+# 使用中科大的GNU镜像服务器
 wget http://mirrors.ustc.edu.cn/gnu/gcc/gcc-4.6.2/gcc-4.6.2.tar.gz
 
 ```
@@ -55,7 +55,7 @@ wget http://mirrors.ustc.edu.cn/gnu/gcc/gcc-4.6.2/gcc-4.6.2.tar.gz
 cd codeviz-1.0.12
 ./configure && make && make install
 ```
-    
+
 运气好的话，可以一次成功；不过凡人运气有限，尽量不用在小事上。下面说明如何一步一步安装。
 
 ### 2.2.1 编译gcc-4.6.2<a id="orgheadline3"></a>
@@ -71,7 +71,7 @@ yum install gmp-devel mpfr-devel libmpc-devel glibc-devel glibc-devel.i686
         http://www.multiprecision.org/index.php?prog=mpc&page=download
     # mpfr-3.1.4
         http://www.mpfr.org/
-# 安装方式都和安装graphviz的一样，tar xxx ; cd xxx; ./configure && make && sudo make install    
+# 安装方式都和安装graphviz的一样，tar xxx ; cd xxx; ./configure && make && sudo make install
 
 # 如果codeviz-1.0.12/compilers下没有gcc-4.6.2，安装脚本会从gnu/gcc官网下载，很慢！
 # 所以要事先从国内服务器下载
@@ -84,7 +84,7 @@ cd gcc-graph/objdir
 sudo make install
 ```
 
-install\_gcc-4.6.2.sh默认使能共享库 `--enable-shared` 并自举编译 `make bootstrap` 
+install\_gcc-4.6.2.sh默认使能共享库 `--enable-shared` 并自举编译 `make bootstrap`
 
 - 共享库要指明编译参数 `-fPIC`
 - 自举编译多半不能编译通过，所以要去使能自举编译 `--disable-bootstrap`
@@ -130,32 +130,32 @@ sudo make install-codeviz
 ## 3.1 codeviz gcc-4.6.2编译源文件<a id="orgheadline7"></a>
 
 - 测试源文件
-	
+
 ```
-	
+
 	#include <stdio.h>
-	 
+
 	void test1();
 	void test2();
 	void test3();
-	 
+
 	int main()
 	{
 		test1();
 		test2();
-	 
+
 		return 0;
 	}
-	 
+
 	void test1()
 	{
 	}
-	 
+
 	void test2()
 	{
 		test2();
 	}
-	 
+
 	void test3()
 	{
 	}
@@ -168,7 +168,7 @@ sudo make install-codeviz
 /usr/local/gcc-graph/bin/gcc -c test.c
 
 ```
-    
+
 - 生成graph
 
 ```
@@ -176,7 +176,7 @@ sudo make install-codeviz
 genfull -f test.c.cdepn
 # 生成函数main的graph文件main.ps
 gengraph -f main
-    
+
 ```
 
 - 打开ps可以看到函数调用图

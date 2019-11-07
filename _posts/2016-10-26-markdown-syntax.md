@@ -13,13 +13,13 @@ keywords: markdown
 	# header1
 	## header2
 	###### header6
-			
+
 ### 区块引用
 
 	> 这是引用的部分
-	
+
 > 这也是引用的部分
-	
+
 	> 引用中也可以使用其他的markdown语法
 
 > 这也是**引用**的部分
@@ -70,7 +70,7 @@ emoji list:
 如果是一句中的部分代码：
 
 	哈哈哈后面的是代码`#include <iostream>`在后面的没有代码
-	
+
 哈哈哈后面的是代码`#include <iostream>`在后面的没有代码
 
 
@@ -81,7 +81,7 @@ emoji list:
 	***
 	---
 	_____
-	
+
 ---------------------
 
 啊
@@ -117,13 +117,13 @@ emoji list:
 [click](http://vonway.cn)
 
 这是另一个链接
-	
+
 	[about](http://vonway.cn/about)
 
 [about](http://vonway.cn/about)
 
 这是另一个相同的链接
-	
+
 	[about] [2]
 
 [about] [2]
@@ -173,7 +173,7 @@ _ll_
 ### 转义
 
 	\可以转移的符号：
-	
+
 	\   反斜线
 	`   反引号
 	*   星号
@@ -186,7 +186,7 @@ _ll_
 	-   减号
 	.   英文句点
 	!   惊叹号
-	
+
 ### 换行
 
 在一行的末尾加上两个空格后回车，相当于换行`<br>`,不用利用空行换行了~

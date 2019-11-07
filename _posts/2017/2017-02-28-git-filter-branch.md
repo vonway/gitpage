@@ -8,14 +8,14 @@ keywords: git sensitive-data repository
 
 # 永久删除git库中的所有大文件或者机密文件
 
-有时我们忘记了在gitignore中添加大文件或者二进制文件或者记录账号密码的文件，最后又不小心把他们commit了。  
-如果直接  
+有时我们忘记了在gitignore中添加大文件或者二进制文件或者记录账号密码的文件，最后又不小心把他们commit了。
+如果直接
 
 	git rm some-files
 
-只能使得后面的commit中都不包括这些文件，如果是账号密码文件，别人可以从以前的commit中获取，  
-如果是大文件，整个git库的大小依然很大  
-所以解决的办法就是在git仓库中的删除所有的相关文件和记录，采用`git filter-branch`来处理  
+只能使得后面的commit中都不包括这些文件，如果是账号密码文件，别人可以从以前的commit中获取，
+如果是大文件，整个git库的大小依然很大
+所以解决的办法就是在git仓库中的删除所有的相关文件和记录，采用`git filter-branch`来处理
 假设有如下文件，我们需要删除\*.db的文件
 
 ![ls](/images/git-filter-branch/git-ls.PNG)
@@ -33,7 +33,7 @@ keywords: git sensitive-data repository
 
 >立刻回收空间
 
-	rm -rf .git/refs/original/ 
+	rm -rf .git/refs/original/
 	git reflog expire --expire=now --all
 	git gc --prune=now
 	git gc --aggressive --prune=now

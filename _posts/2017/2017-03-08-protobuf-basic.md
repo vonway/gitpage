@@ -2,7 +2,7 @@
 layout: post
 title: protobuf入门
 categories: [protobuf]
-description: how to compile and use protobuf 
+description: how to compile and use protobuf
 keywords: im protobuf
 ---
 
@@ -23,17 +23,17 @@ keywords: im protobuf
 
 安装都是老步骤了：
 
-    tar xvf protobuf-2.6.1.tar.gz  
-    cd protobuf-2.6.1/  
-    ./configure  
-    make  
-    sudo make install  
+    tar xvf protobuf-2.6.1.tar.gz
+    cd protobuf-2.6.1/
+    ./configure
+    make
+    sudo make install
 
-如果你是从github clone或者下载的zip包，你需要在./configure之前运行./autogen.sh  
-autogen.sh运行会需要一些依赖  
-比如gtest等，需要手动下载解压当protobuf目录下  
+如果你是从github clone或者下载的zip包，你需要在./configure之前运行./autogen.sh
+autogen.sh运行会需要一些依赖
+比如gtest等，需要手动下载解压当protobuf目录下
 ```
-unzip gtest-1.7.0.zip  
+unzip gtest-1.7.0.zip
 mv gtest-1.7.0 gtest
 ```
 
@@ -98,7 +98,7 @@ protoc -I=./ --cpp_out=./ im.user.proto
 
 运行后可以看到当前目录下生成了两个文件：
 ```
-im.user.pb.cc  
+im.user.pb.cc
 im.user.pb.h
 ```
 
@@ -146,7 +146,7 @@ int main()
                  << "\t" << user2.user_name()
                  << "\t" << user2.password()
                  << "\t" <<user2.client_type() << endl;
-                 
+
         return 0;
 
 }
