@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://blog.vonway.cn
+url: https://www.vonway.cn
 date_format: "ordinal"
 title: vonway
 subtitle: "不吃羊的小灰灰"
@@ -18,7 +18,7 @@ side_bar_repo_limit: 5
 # ---------------- #
 author: vonway
 organization: VVV, Inc.
-organization_url: https://blog.vonway.cn
+organization_url: https://www.vonway.cn
 location: Shanghai, China
 email: haisayu@gmail.com
 
